@@ -6,24 +6,18 @@ import java.math.RoundingMode;
 public class Deserialization {
     String base;
     String target;
-    BigDecimal price;
+    double price;
 
-    public Deserialization(DTO dto) {
+    public Deserialization(DTO dto, int amount) {
         this.base = dto.base_code();
         this.target = dto.target_code();
-
-        BigDecimal bigDecimal = new BigDecimal(dto.conversion_rate());
-        bigDecimal = bigDecimal.setScale(2, RoundingMode.HALF_UP);
-
-        this.price = bigDecimal;
+        this.price = dto.conversion_rate() * amount;
     }
 
     @Override
     public String toString() {
         return "Deserialization{" +
-                "base='" + base + '\'' +
-                ", target='" + target + '\'' +
-                ", price=" + price +
+                "price=" + price +
                 '}';
     }
 }
