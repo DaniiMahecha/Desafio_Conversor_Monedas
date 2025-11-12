@@ -1,4 +1,4 @@
-package com.daniidev.request.request;
+package com.daniidev.request;
 
 import com.google.gson.Gson;
 
