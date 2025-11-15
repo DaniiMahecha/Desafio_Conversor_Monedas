@@ -6,10 +6,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        Request request = new Request();
-//        System.out.println(request.callApi("EUR", "COP"));
-//        Deserialization deserialization = new Deserialization(request.callApi("BRL", "USD"), 250);
-//        System.out.println(deserialization);
         ExchangeMenu exchangeMenu = new ExchangeMenu();
         Scanner sc = new Scanner(System.in);
         int n = 0;
@@ -39,52 +35,52 @@ public class Main {
                         amount = sc.nextDouble();
 
                         Deserialization deserialization = new Deserialization(request.callApi(base, target), amount);
-                        System.out.printf("La cantidad $%d en Dolares son: $%.2f Euros", amount, deserialization.getPrice());
+                        System.out.printf("La cantidad $%.2f en Dolares son: $%.2f Euros", amount, deserialization.getPrice());
                         break;
                     case 2:
                         base = "EUR";
                         target = "USD";
                         System.out.println("Digíte la cantidad de Euros a convertir: ");
-                        amount = sc.nextFloat();
+                        amount = sc.nextDouble();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        System.out.printf("La cantidad $%d en Euros son: $%.2f Dolares", amount, deserialization.getPrice());
+                        System.out.printf("La cantidad $%.2f en Euros son: $%.2f Dolares", amount, deserialization.getPrice());
                         break;
                     case 3:
                         base = "USD";
                         target = "COP";
                         System.out.println("Digíte la cantidad de Euros a convertir: ");
-                        amount = sc.nextFloat();
+                        amount = sc.nextDouble();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        System.out.printf("La cantidad $%d en Dolares son: $%.2f Pesos colombianos", amount, deserialization.getPrice());
+                        System.out.printf("La cantidad $%.2f en Dolares son: $%.2f Pesos colombianos", amount, deserialization.getPrice());
                         break;
                     case 4:
                         base = "COP";
                         target = "USD";
                         System.out.println("Digíte la cantidad de Euros a convertir: ");
-                        amount = sc.nextFloat();
+                        amount = sc.nextDouble();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        System.out.printf("La cantidad $%d en Pesos colombianos son: $%.2f Dolares", amount, deserialization.getPrice());
+                        System.out.printf("La cantidad $%.2f en Pesos colombianos son: $%.2f Dolares", amount, deserialization.getPrice());
                         break;
                     case 5:
                         base = "EUR";
                         target = "COP";
                         System.out.println("Digíte la cantidad de Euros a convertir: ");
-                        amount = sc.nextFloat();
+                        amount = sc.nextDouble();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        System.out.printf("La cantidad $%d en Euros son: $%.2f Pesos colombianos", amount, deserialization.getPrice());
+                        System.out.printf("La cantidad $%.2f en Euros son: $%.2f Pesos colombianos", amount, deserialization.getPrice());
                         break;
                     case 6:
                         base = "COP";
                         target = "EUR";
                         System.out.println("Digíte la cantidad de Euros a convertir: ");
-                        amount = sc.nextFloat();
+                        amount = sc.nextDouble();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        System.out.printf("La cantidad $%d en Pesos colombianos son: $%.2f Euros", amount, deserialization.getPrice());
+                        System.out.printf("La cantidad $%.2f en Pesos colombianos son: $%.2f Euros", amount, deserialization.getPrice());
                         break;
                 }
 
@@ -100,6 +96,6 @@ public class Main {
 
 
         }
-
+        sc.close();
     }
 }
