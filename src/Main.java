@@ -1,11 +1,12 @@
 import com.daniidev.app.ExchangeMenu;
+import com.daniidev.exceptions.OpcionInvalidaExcepcion;
 import com.daniidev.request.Deserialization;
 import com.daniidev.request.Request;
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws OpcionInvalidaExcepcion {
         ExchangeMenu exchangeMenu = new ExchangeMenu();
         Scanner sc = new Scanner(System.in);
         int n = 0;
@@ -13,6 +14,10 @@ public class Main {
         exchangeMenu.welcome();
         System.out.println("Desea continuar Y/N: ");
         var yesNo = sc.nextLine();
+        if (yesNo != "y" || yesNo != "n") {
+            var e =  new OpcionInvalidaExcepcion();
+            System.out.println(e.getMessage());
+        }
 
         while (n != 7){
 
@@ -21,6 +26,10 @@ public class Main {
                 System.out.println("Seleccione una opción: ");
                 n = sc.nextInt();
                 sc.nextLine();
+                if (n < 1 || n > 7){
+                    var a = throw new OpcionInvalidaExcepcion();
+                    System.out.println(a.getMessage());
+                }
 
                 Request request = new Request();
                 String base;
