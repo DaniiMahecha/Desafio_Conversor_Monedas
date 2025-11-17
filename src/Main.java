@@ -81,7 +81,8 @@ public class Main {
                         sc.nextLine(); // Limpiar buffer
 
                         Deserialization deserialization = new Deserialization(request.callApi(base, target), amount);
-                        new History(deserialization);
+                        History history = new History(deserialization);
+                        history.saveHistorical();
                         System.out.printf("\nLa cantidad $%.2f en Dólares son: €%.2f Euros\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -93,7 +94,8 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        new History(deserialization);
+                        history = new History(deserialization);
+                        history.saveHistorical();
                         System.out.printf("\nLa cantidad €%.2f en Euros son: $%.2f Dólares\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -105,7 +107,8 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        new History(deserialization);
+                        history = new History(deserialization);
+                        history.saveHistorical();
                         System.out.printf("\nLa cantidad $%.2f en Dólares son: $%.2f Pesos colombianos\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -117,7 +120,8 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        new History(deserialization);
+                        history = new History(deserialization);
+                        history.saveHistorical();
                         System.out.printf("\nLa cantidad $%.2f en Pesos colombianos son: $%.2f Dólares\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -129,7 +133,8 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        new History(deserialization);
+                        history = new History(deserialization);
+                        history.saveHistorical();
                         System.out.printf("\nLa cantidad €%.2f en Euros son: $%.2f Pesos colombianos\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -141,7 +146,8 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
-                        new History(deserialization);
+                        history = new History(deserialization);
+                        history.saveHistorical();
                         System.out.printf("\nLa cantidad $%.2f en Pesos colombianos son: €%.2f Euros\n\n", amount, deserialization.getPrice());
                         break;
                 }

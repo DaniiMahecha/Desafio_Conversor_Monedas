@@ -1,9 +1,11 @@
 package com.daniidev.app;
 
 import com.daniidev.request.Deserialization;
-
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 public class History {
     String base;
@@ -55,8 +57,15 @@ public class History {
             String symbolBase = getSymbolForCurrency(getBase());
             String symbolTarget = getSymbolForCurrency(getTarget());
 
-            String text = "Conversión de " + symbolBase + getAmount() + " " + getBase() +
-                    " a " + symbolTarget + getPrice() + " " + getTarget() + "\n";
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String timestamp = LocalDateTime.now().format(formatter);
+
+
+            String text = String.format("[%s] Conversión de %s%.2f %s a %s%.2f %s%n",
+                    timestamp,
+                    symbolBase, getAmount(), getBase(),
+                    symbolTarget, getPrice(), getTarget()
+            );
 
             writer.write(text);
             return true;
