@@ -1,4 +1,5 @@
 import com.daniidev.app.ExchangeMenu;
+import com.daniidev.app.History;
 import com.daniidev.exceptions.OpcionInvalidaExcepcion;
 import com.daniidev.request.Deserialization;
 import com.daniidev.request.Request;
@@ -80,6 +81,7 @@ public class Main {
                         sc.nextLine(); // Limpiar buffer
 
                         Deserialization deserialization = new Deserialization(request.callApi(base, target), amount);
+                        new History(deserialization);
                         System.out.printf("\nLa cantidad $%.2f en Dólares son: €%.2f Euros\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -91,6 +93,7 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
+                        new History(deserialization);
                         System.out.printf("\nLa cantidad €%.2f en Euros son: $%.2f Dólares\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -102,6 +105,7 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
+                        new History(deserialization);
                         System.out.printf("\nLa cantidad $%.2f en Dólares son: $%.2f Pesos colombianos\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -113,6 +117,7 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
+                        new History(deserialization);
                         System.out.printf("\nLa cantidad $%.2f en Pesos colombianos son: $%.2f Dólares\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -124,6 +129,7 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
+                        new History(deserialization);
                         System.out.printf("\nLa cantidad €%.2f en Euros son: $%.2f Pesos colombianos\n\n", amount, deserialization.getPrice());
                         break;
 
@@ -135,6 +141,7 @@ public class Main {
                         sc.nextLine();
 
                         deserialization = new Deserialization(request.callApi(base, target), amount);
+                        new History(deserialization);
                         System.out.printf("\nLa cantidad $%.2f en Pesos colombianos son: €%.2f Euros\n\n", amount, deserialization.getPrice());
                         break;
                 }
