@@ -2,8 +2,7 @@
 
 <div align="center">
 
-![Badge del Curso](ruta/a/tu/emblema.png)
-<!-- Reemplaza "ruta/a/tu/emblema.png" con la ruta real de tu imagen -->
+![Badge del Curso](assets/badge.png)
 
 **Challenge Alura Latam & Oracle One**
 
@@ -29,7 +28,7 @@ El proyecto fue desarrollado como parte del programa **ONE - Oracle Next Educati
 - ✅ Interfaz de usuario intuitiva con menú interactivo
 - ✅ Validación de entradas del usuario
 - ✅ Manejo de excepciones personalizadas
-- ✅ Registro histórico de conversiones en archivo de texto
+- ✅ Registro histórico de conversiones con **fecha y hora** en archivo de texto
 - ✅ Formato visual atractivo con bordes ASCII
 
 ---
@@ -91,8 +90,8 @@ src/
    ```
 
 2. **Agregar la librería Gson al proyecto**
-   - Descarga Gson desde [Maven Repository](https://mvnrepository.com/artifact/com.google.code.gson/gson)
-   - Agrega el JAR al classpath del proyecto
+    - Descarga Gson desde [Maven Repository](https://mvnrepository.com/artifact/com.google.code.gson/gson)
+    - Agrega el JAR al classpath del proyecto
 
 3. **Compilar el proyecto**
    ```bash
@@ -143,12 +142,12 @@ La cantidad $100.00 en Dólares son: €92.45 Euros
 
 ## 📝 Archivo Histórico
 
-Cada conversión realizada se guarda automáticamente en `historical.txt` con el siguiente formato:
+Cada conversión realizada se guarda automáticamente en `historical.txt` con el siguiente formato, incluyendo **fecha y hora** de la transacción:
 
 ```
-Conversión de $100.0 USD a €92.45 EUR
-Conversión de €50.0 EUR a $54.12 USD
-Conversión de $200.0 USD a $878640.0 COP
+[2025-01-15 14:23:45] Conversión de $100.00 USD a €92.45 EUR
+[2025-01-15 14:25:12] Conversión de €50.00 EUR a $54.12 USD
+[2025-01-15 14:27:30] Conversión de $200.00 USD a $878640.00 COP
 ```
 
 ---
@@ -171,8 +170,8 @@ Este proyecto me permitió desarrollar habilidades en:
 
 <div align="center">
 
-![Insignia Alura](ruta/a/tu/emblema.png)
-<!-- Coloca aquí la imagen de tu emblema del curso -->
+![Insignia Alura](assets/badge.png)
+<!-- Coloca tu insignia del challenge en la carpeta assets/ -->
 
 **Challenge completado exitosamente**  
 *Alura Latam & Oracle Next Education*
@@ -185,8 +184,8 @@ Este proyecto me permitió desarrollar habilidades en:
 
 **Tu Nombre**
 
-- GitHub: [@daniidev](https://github.com/daniidev)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
+- GitHub: [@DaniiMahecha](https://github.com/DaniiMahecha)
+- LinkedIn: [Daniel Felipe Mahecha Peña](https://linkedin.com/in/tu-perfil)
 
 ---
 
