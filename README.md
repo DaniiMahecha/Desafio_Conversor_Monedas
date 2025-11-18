@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Badge del Curso](assets/badge.png)
+![Badge del Curso](C:\Users\danie\OneDrive\Escritorio\Oracle ONE\Back-end\Java\Desafio_Conversor_Monedas\src\assets\badge.png)
 
 **Challenge Alura Latam & Oracle One**
 
@@ -170,7 +170,7 @@ Este proyecto me permitió desarrollar habilidades en:
 
 <div align="center">
 
-![Insignia Alura](assets/badge.png)
+![Insignia Alura](C:\Users\danie\OneDrive\Escritorio\Oracle ONE\Back-end\Java\Desafio_Conversor_Monedas\src\assets\badge.png)
 <!-- Coloca tu insignia del challenge en la carpeta assets/ -->
 
 **Challenge completado exitosamente**  
@@ -185,7 +185,7 @@ Este proyecto me permitió desarrollar habilidades en:
 **Tu Nombre**
 
 - GitHub: [@DaniiMahecha](https://github.com/DaniiMahecha)
-- LinkedIn: [Daniel Felipe Mahecha Peña](https://linkedin.com/in/tu-perfil)
+- LinkedIn: [Daniel Felipe Mahecha Peña](https://www.linkedin.com/in/daniel-felipe-mahecha-peña)
 
 ---
 
