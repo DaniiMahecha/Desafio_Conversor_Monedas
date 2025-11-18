@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Badge del Curso](C:\Users\danie\OneDrive\Escritorio\Oracle ONE\Back-end\Java\Desafio_Conversor_Monedas\src\assets\badge.png)
+<img width="500" height="500" alt="ff043987-239b-4661-bdb1-7f4ca6092c48" src="./src/assets/badge.png" />
 
 **Challenge Alura Latam & Oracle One**
 
@@ -170,7 +170,7 @@ Este proyecto me permitió desarrollar habilidades en:
 
 <div align="center">
 
-![Insignia Alura](C:\Users\danie\OneDrive\Escritorio\Oracle ONE\Back-end\Java\Desafio_Conversor_Monedas\src\assets\badge.png)
+<img width="500" height="500" alt="ff043987-239b-4661-bdb1-7f4ca6092c48" src="./src/assets/badge.png" />
 <!-- Coloca tu insignia del challenge en la carpeta assets/ -->
 
 **Challenge completado exitosamente**  
