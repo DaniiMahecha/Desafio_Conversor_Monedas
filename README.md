@@ -182,7 +182,7 @@ Este proyecto me permitió desarrollar habilidades en:
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**
+**Daniel Felipe Mahecha Peña**
 
 - GitHub: [@DaniiMahecha](https://github.com/DaniiMahecha)
 - LinkedIn: [Daniel Felipe Mahecha Peña](https://www.linkedin.com/in/daniel-felipe-mahecha-peña)
